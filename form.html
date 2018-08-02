@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="description" content="simple form" />
+	<meta name="keywords" content="form" />
+	<meta name="language" content="pl" />
+	<meta name="robots" content="index,follow" />
+	<meta name="revisit-after" content="3 days" />
+	<meta name="application-name" content="" />
+	<meta name="msapplication-tooltip" content="" />
+	<meta name="msapplication-starturl" content="/" />
+	<meta name="msapplication-window" content="width=1024;height=768" />
+	<meta name="msapplication-navbutton-color" content="#16B1F1" />
+	<meta name="msapplication-task" content="" />
+	<meta name="msapplication-task" content="" />
+	<meta name="msapplication-task" content="" />
+	<meta name="msapplication-task" content="" />
+	<meta name="msapplication-task" content="" />
+
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</head>
+
+<body>	
+	
+	<div class="authy__cont">
+		<div class="authy__btnCont">
+			<div class="authy__btnSubCont">
+				<a id="login" href="#" class="authy__btn authy__btn--active">logowanie</a>
+				<a id="registration" href="#" class="authy__btn">rejestracja</a>
+			</div>
+		</div>
+
+		<div class="authy__loginCont">
+
+			<h3 class="authy__loginHeader">
+				Zaloguj się, to proste!
+			</h3>
+
+			<form class="authy__loginForm" action="" >
+				<select class="authy__loginSelect" name="loginSelect">
+					<option class="authy__loginItem" value="0" selected>Wybierz typ klienta</option>
+					<option class="authy__loginItem" value="Klient indywidualny">Klient indywidualny</option>
+					<option class="authy__loginItem" value="Firma">Firma</option>
+				</select>
+
+				<div class="authy__loginInputsCont">
+
+					<span class="authy__loginInputHeading">dane abonamenta</span>
+					<div class="clear"></div>
+					<input class="authy__loginInput" type="text" name="number" value="" placeholder="Numer konta abonenta" autocomplete="off">
+					<input class="authy__loginInput" type="text" name="nip" value="" placeholder="NIP" autocomplete="off">
+					<div class="clear"></div>
+
+					<span class="authy__loginInputHeading">dane osoby upoważnionej</span>
+					<div class="clear"></div>
+					<input class="authy__loginInput" type="text" name="name" value="" placeholder="Imię" autocomplete="off">
+					<input class="authy__loginInput" type="text" name="lastname" value="" placeholder="Nazwisko" autocomplete="off">
+					<div class="clear"></div>
+
+					<span class="authy__loginInputHeading">dane kontakotowe</span>
+					<div class="clear"></div>
+					<input class="authy__loginInput" type="text" name="email" value="" placeholder="Adres e-mail" autocomplete="off">
+					<input class="authy__loginInput" type="text" name="email2" value="" placeholder="Powtórz e-mail" autocomplete="off">
+					<div class="clear"></div>
+
+					<span class="authy__loginInputHeading">hasło</span>
+					<div class="clear"></div>
+					<input class="authy__loginInput" type="text" name="pass" value="" placeholder="Hasło" autocomplete="off">
+					<input class="authy__loginInput" type="text" name="pass2" value="" placeholder="Powtórz hasło" autocomplete="off">
+					<div class="clear"></div>
+
+					<p class="authy__loginPara">
+						Potrzebujesz pomocy?  Zobacz <a href="#" class="authy__loginLink" target="_blank">Instrukcję rejestracji</a>
+					</p>
+
+					<div class="authy__loginCheckboxCont">
+
+						<label class="loginCheckboxlabel" for="loginCheckbox">
+							<input class="authy__loginCheckbox" id="loginCheckbox" type="checkbox" name="checkbox" value="1">
+							Akceptuję
+							<span class="authy__loginCheckboxImg"></span>
+						</label>
+						<a class="authy__loginLink" href="#" target="_blank">Regulamin</a>
+					</div>
+
+					<button class="authy__loginSubmit" type="submit" name="button">zarejestruj się</button>
+
+
+				</div>
+			</form>
+		</div>
+
+		<div class="authy__registrationCont">
+			<h3 class="authy__registrationHeader">
+				Zarejestruj się, to proste! Wypełniasz formularz,
+				<br>
+				dostajesz e-mail i aktywujesz konto jednym kliknięciem.
+			</h3>
+
+			<form class="authy__registrationForm" action="" >
+				<select class="authy__registrationSelect" name="registrationSelect">
+					<option class="authy__registrationItem" value="0" selected>Wybierz typ klienta</option>
+					<option class="authy__registrationItem" value="Klient indywidualny">Klient indywidualny</option>
+					<option class="authy__registrationItem" value="Firma">Firma</option>
+				</select>
+
+				<div class="authy__registrInputsCont">
+
+					<span class="authy__registrationInputHeading">dane abonamenta</span>
+					<div class="clear"></div>
+					<input class="authy__registrationInput" type="text" name="number" value="" placeholder="Numer konta abonenta" autocomplete="off">
+					<!-- <input class="authy__registrationInput" type="text" name="nip" value="" placeholder="NIP" autocomplete="off"> -->
+					<div class="clear"></div>
+
+					<select class="authy__registrationSelect authy__registrationSelect--Doc" name="documentSelect">
+						<option class="authy__registrationItemDoc" value="passport" selected>Nie posiadam numeru PESEL</option>
+						<option class="authy__registrationItemDoc" value="pesel">Posiadam numeru PESEL</option>
+					</select>
+
+
+					<input id="peselInput" class="authy__registrationInput authy__registrationInput--pesel" type="text" name="pesel" value="" placeholder="PESEL" autocomplete="off" disabled="true">
+					<input id="passportInput" class="authy__registrationInput authy__registrationInput--pass authy__registrationInput--visible " type="text" name="passport" value="" placeholder="Numer paszportu" autocomplete="off">
+					<div class="clear"></div>
+
+					<span class="authy__registrationInputHeading">dane kontakotowe</span>
+					<div class="clear"></div>
+					<input class="authy__registrationInput" type="text" name="email" value="" placeholder="Adres e-mail" autocomplete="off">
+					<input class="authy__registrationInput" type="text" name="email2" value="" placeholder="Powtórz e-mail" autocomplete="off">
+					<div class="clear"></div>
+
+					<span class="authy__registrationInputHeading">hasło</span>
+					<div class="clear"></div>
+					<input class="authy__registrationInput" type="text" name="pass" value="" placeholder="Hasło" autocomplete="off">
+					<input class="authy__registrationInput" type="text" name="pass2" value="" placeholder="Powtórz hasło" autocomplete="off">
+					<div class="clear"></div>
+
+					<p class="authy__registrationPara">
+						Potrzebujesz pomocy?  Zobacz <a href="#" class="authy__registrationLink" target="_blank">Instrukcję rejestracji</a>
+					</p>
+
+					<div class="authy__registrationCheckboxCont">
+
+						<label class="registrationCheckboxlabel" for="registrationCheckbox">
+							<input class="authy__registrationCheckbox" id="registrationCheckbox" type="checkbox" name="checkbox" value="1">
+							Akceptuję
+							<span class="authy__registrationCheckboxImg"></span>
+						</label>
+						<a class="authy__registrationLink" href="#" target="_blank">Regulamin</a>
+					</div>
+
+					<button class="authy__registrationSubmit" type="submit" name="button">zarejestruj się</button>
+
+
+				</div>
+			</form>
+
+
+		</div>
+
+
+	</div>
+
+
+</body>
+</html>

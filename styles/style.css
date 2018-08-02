@@ -1,0 +1,204 @@
+
+		.authy__cont {
+			width: 100%;
+			max-width: 992px;
+			margin: 0 auto;
+			font-family: 'Source Sans Pro', Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+		}
+		.authy__btnCont {
+			width: 100%;
+			max-width: 370px;
+			border-bottom: 1px solid #eeeeef;
+			margin: 0 auto 35px;
+			font-size: 24px;
+			font-weight: 300;
+		}
+		.authy__btnSubCont {
+			display: flex;
+			justify-content: space-around;
+		}
+		.authy__btn {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: inherit;
+		}
+		.authy__btn--active {
+			font-weight: 700;
+			position: relative;
+		}
+		.authy__btn--active:after {
+			content: '';
+			width: calc(100% + 10px);
+			height: 2px;
+			background-color: #5bb5f3;
+			position: absolute;
+			bottom: -1px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.authy__loginHeader,
+		.authy__registrationHeader {
+			font-size: 16px;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+		.authy__loginForm,
+		.authy__registrationForm {
+			width: 100%;
+			max-width: 630px;
+			margin: 0 auto;
+		}
+		.authy__loginSelect,
+		.authy__registrationSelect {
+			display: block;
+			width: 294px;
+			height: 44px;
+			border-radius: 5px;
+			border: 1px solid #eeeeef;
+			padding-left: 30px;
+			margin: 34px auto;
+			font-weight: 700;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background: url('../img/dropdownArrow.png') no-repeat right #fff;
+	    background-position: 255px 17px;
+		}
+
+		.authy__loginSelect::-ms-expand,
+		.authy__registrationSelect::-ms-expand  {
+			display: none;
+		}
+		.authy__loginInputHeading,
+		.authy__registrationInputHeading {
+			font-size: 14px;
+			font-weight: 600;
+			text-transform: uppercase;
+			margin-bottom: 9px;
+			display: block;
+		}
+		.clear {
+			clear: both;
+		}
+
+		.authy__loginInput,
+		.authy__registrationInput {
+			width: 300px;
+	    float: left;
+	    border: none;
+	    border-bottom: 1px solid #eeeeef;
+	    margin-bottom: 21px;
+	    padding: 12px;
+	    padding-left: 14px;
+	    box-sizing: border-box;
+		}
+		.authy__loginInput:nth-of-type(odd),
+		.authy__registrationInput:nth-of-type(2n+2) {
+			margin-right: 30px;
+		}
+		.authy__loginPara,
+		.authy__registrationPara {
+			text-align: center;
+	    color: #000;
+	    margin-bottom: 30px;
+	    font-weight: 300;
+		}
+		.authy__loginLink,
+		.authy__registrationLink  {
+			color: #000;
+		}
+		.authy__loginCheckboxCont,
+		.authy__registrationCheckboxCont {
+			text-align: center;
+			margin-bottom: 33px;
+		}
+		.authy__loginSubmit,
+		.authy__registrationSubmit {
+			text-transform: uppercase;
+	    background-color: #2ca5ff;
+	    color: #fff;
+	    display: block;
+	    margin: 0 auto;
+	    border: none;
+	    padding: 14px 48px 14px 32px;
+	    font-size: 24px;
+	    font-weight: 300;
+	    font-family: inherit;
+			position: relative;
+		}
+		.authy__loginSubmit:after,
+		.authy__registrationSubmit:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			background: url('../img/sprite.png') 0 0 no-repeat;
+			z-index: 10;
+			background-position: 2px -2px;
+			width: 21px;
+			height: 25px;
+			transform: translateY(-50%);
+		}
+		.authy__loginSubmit:hover,
+		.authy__registrationSubmit:hover {
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75);
+			background-color: #fff;
+			color: #2ca5ff;
+		}
+		.authy__loginSubmit:hover:after,
+		.authy__registrationSubmit:hover:after {
+			background-position: -26px -3px;
+		}
+		.loginCheckboxlabel,
+		.registrationCheckboxlabel {
+			cursor: pointer;
+			position: relative;
+		}
+		.authy__loginCheckbox,
+		.authy__registrationCheckbox {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+		}
+		.authy__loginCheckbox:checked ~ .authy__loginCheckboxImg,
+		.authy__registrationCheckbox:checked ~ .authy__registrationCheckboxImg {
+			background-position-y: -93px;
+		}
+		.authy__loginCheckboxImg,
+		.authy__registrationCheckboxImg  {
+			background-image: url('../img/form_elements_nol.png');
+	    background-position: -31px -63px;
+	    position: absolute;
+			top: -1px;
+	    left: -28px;
+	    height: 20px;
+	    width: 18px;
+		}
+		.authy__registrationCont {
+			display: none;
+		}
+
+		.authy__registrationSelect--Doc {
+			float: left;
+	    width: 100%;
+	    max-width: 300px;
+	    height: 34px;
+	    background-position: 255px 13px;
+	    font-size: 14px;
+	    font-weight: 300;
+	    margin-top: 5px;
+	    margin-bottom: 14px;
+	    margin-right: 30px;
+	    padding-left: 14px;
+		}
+
+		.authy__registrationInput--pesel:nth-of-type(n),
+		.authy__registrationInput--pass:nth-of-type(n) {
+			display: none;
+			margin-right: 0;
+		}
+		.authy__registrationInput--visible:nth-of-type(n) {
+			display: block;
+		}
